@@ -11,3 +11,17 @@ Al tratarse de un servicio de libreria debemos como primer paso
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 // quitar el metodo main()
 ``` 
+
+Tener en cuenta que donde usemos la libreria debemos de escribir tambien el nuevo componentScan, por ejemplo
+
+``` java
+@EntityScan({"pe.tuna.serviciousuariocommons.models.entity"})
+@SpringBootApplication
+public class ServicioUsuariosApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ServicioUsuariosApplication.class, args);
+    }
+
+}
+```
