@@ -99,11 +99,11 @@ public class Usuario implements Serializable {
         this.roles = roles;
     }
 
-    public int getIntentos() {
+    public Integer getIntentos() {
         return intentos;
     }
 
-    public void setIntentos(int intentos) {
+    public void setIntentos(Integer intentos) {
         this.intentos = intentos;
     }
 }
